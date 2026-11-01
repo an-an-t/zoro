@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Avatar Airbender';
+  src: url('/fonts/AvatarAirbender.ttf') format('truetype'),
+       url('/fonts/Avatar%20Airbender.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: #070b09;
+    --foreground: #f4f4f5;
+  }
+
+  html {
+    background-color: #070b09;
+    color: #f4f4f5;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #070b09;
+    color: #f4f4f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Hide scrollbar for a seamless, artistic museum feel while retaining scrollability */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070b09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #182820;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2bf8a0;
+}
